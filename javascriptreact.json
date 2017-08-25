@@ -1,0 +1,77 @@
+{
+	"React component": {
+		"prefix": "rc",
+		"body": [
+			"// @flow",
+			"import React, { PureComponent } from 'react';",
+			"import classNames from 'classnames';",
+			"",
+			"import styles from './$1.css';",
+			"",
+			"type Props = {",
+			"  /** Primary content. */",
+			"  children?: React.Element<any>,",
+			"  /** Additional classes. */",
+			"  className?: string",
+			"  /** $3 */",
+			"};",
+			"",
+			"/** $2 */",
+			"export default class $1 extends PureComponent<$$Shape<Props>, Props, void> {",
+			"  render () {",
+			"    const {",
+			"      children,",
+			"      className,",
+			"      ...rest",
+			"    } = this.props;",
+			"",
+			"    const componentClassNames = classNames(",
+			"      styles.Component,",
+			"      className",
+			"    );",
+			"",
+			"    return (",
+			"      <div",
+			"        className={componentClassNames}",
+			"        {...rest}",
+			"      >",
+			"        {children}",
+			"      </div>",
+			"    );",
+			"  }",
+			"}"
+		]
+	},
+	"React component test file": {
+		"prefix": "rt",
+		"body": [
+			"import React from 'react';",
+			"import { shallow } from 'enzyme';",
+			"",
+			"import $1 from '../$1';",
+			"",
+			"describe('$1', () => {",
+			"  it('should render', () => {",
+			"    const wrapper = shallow(",
+			"      <$1 $2/>",
+			"    );",
+			"",
+			"    expect(wrapper.node).toMatchSnapshot();",
+			"  });",
+			"});",
+			""
+		]
+	},
+	"React component test case": {
+		"prefix": "rtit",
+		"body": [
+			"  it('$1', () => {",
+			"    const wrapper = shallow(",
+			"      <$2 $3/>",
+			"    );",
+			"",
+			"    expect(wrapper.node).toMatchSnapshot();",
+			"  });"
+		]
+	}
+}
