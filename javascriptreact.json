@@ -65,13 +65,13 @@
 	"React component test case": {
 		"prefix": "rtit",
 		"body": [
-			"  it('$1', () => {",
-			"    const wrapper = shallow(",
-			"      <$2 $3/>",
-			"    );",
+			"it('$1', () => {",
+			"  const wrapper = shallow(",
+			"    <$2 $3/>",
+			"  );",
 			"",
-			"    expect(wrapper.node).toMatchSnapshot();",
-			"  });"
+			"  expect(wrapper.node).toMatchSnapshot();",
+			"});"
 		]
 	}
 }
