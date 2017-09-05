@@ -3,7 +3,7 @@
 		"prefix": "rc",
 		"body": [
 			"// @flow",
-			"import React, { PureComponent } from 'react';",
+			"import * as React from 'react';",
 			"import classNames from 'classnames';",
 			"",
 			"import styles from './$1.css';",
@@ -17,7 +17,7 @@
 			"};",
 			"",
 			"/** $2 */",
-			"export default class $1 extends PureComponent<$$Shape<Props>, Props, void> {",
+			"export default class $1 extends React.PureComponent<Props> {",
 			"  render () {",
 			"    const {",
 			"      children,",
@@ -39,7 +39,8 @@
 			"      </div>",
 			"    );",
 			"  }",
-			"}"
+			"}",
+			""
 		]
 	},
 	"React component test file": {
