@@ -57,7 +57,7 @@
 			"      <$1 $2/>",
 			"    );",
 			"",
-			"    expect(wrapper.node).toMatchSnapshot();",
+			"    expect(wrapper.getElement()).toMatchSnapshot();",
 			"  });",
 			"});",
 			""
@@ -71,7 +71,7 @@
 			"    <$2 $3/>",
 			"  );",
 			"",
-			"  expect(wrapper.node).toMatchSnapshot();",
+			"  expect(wrapper.getElement()).toMatchSnapshot();",
 			"});"
 		]
 	}
