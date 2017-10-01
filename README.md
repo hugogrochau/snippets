@@ -1,2 +1,2 @@
 # snippets
-Snippets I use frequently
+My snippets for vscode
